@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class KodePos
 {
+    // Dictionary digunakan sebagai tabel data kelurahan dan kode pos (table-driven)
     private Dictionary<string, int> kodePos = new Dictionary<string, int>()
     {
         {"Batununggal",40266},
@@ -17,8 +18,9 @@ public class KodePos
         {"Maleer",40274}
     };
 
+    // Method untuk mengambil kode pos berdasarkan nama kelurahan
     public int getKodePos(string kelurahan)
     {
-        return kodePos[kelurahan];
+        return kodePos[kelurahan]; // Mengembalikan nilai kode pos dari Dictionary
     }
 }
